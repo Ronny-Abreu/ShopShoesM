@@ -55,6 +55,14 @@
     </Reference>
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Mail.Abstractions, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\System.Net.Mail.Abstractions.1.1.21\lib\netstandard2.0\System.Net.Mail.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.RegularExpressions.4.3.1\lib\net463\System.Text.RegularExpressions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -101,6 +109,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
