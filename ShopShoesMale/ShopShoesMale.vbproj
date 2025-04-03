@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{890AD195-7F39-412C-8ED5-CFA4CAA8062A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>ShopShoesMale.My.MyApplication</StartupObject>
+    <StartupObject>ShopShoesMale.HomeForm</StartupObject>
     <RootNamespace>ShopShoesMale</RootNamespace>
     <AssemblyName>ShopShoesMale</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -84,6 +84,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="Register.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -105,10 +106,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
-    <Compile Include="My Project\Application.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Application.myapp</DependentUpon>
-    </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -140,7 +137,6 @@
   <ItemGroup>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
-      <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -149,6 +145,9 @@
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logoShoes.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
