@@ -34,7 +34,7 @@ Partial Class Register
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(303, 203)
+        Me.txtNombre.Location = New System.Drawing.Point(345, 200)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(241, 26)
         Me.txtNombre.TabIndex = 0
@@ -42,7 +42,7 @@ Partial Class Register
         'lblNombre
         '
         Me.lblNombre.AutoSize = True
-        Me.lblNombre.Location = New System.Drawing.Point(211, 203)
+        Me.lblNombre.Location = New System.Drawing.Point(253, 200)
         Me.lblNombre.Name = "lblNombre"
         Me.lblNombre.Size = New System.Drawing.Size(69, 20)
         Me.lblNombre.TabIndex = 1
@@ -50,21 +50,21 @@ Partial Class Register
         '
         'txtCorreo
         '
-        Me.txtCorreo.Location = New System.Drawing.Point(303, 253)
+        Me.txtCorreo.Location = New System.Drawing.Point(345, 250)
         Me.txtCorreo.Name = "txtCorreo"
         Me.txtCorreo.Size = New System.Drawing.Size(241, 26)
         Me.txtCorreo.TabIndex = 2
         '
         'txtTelefono
         '
-        Me.txtTelefono.Location = New System.Drawing.Point(303, 303)
+        Me.txtTelefono.Location = New System.Drawing.Point(345, 300)
         Me.txtTelefono.Name = "txtTelefono"
         Me.txtTelefono.Size = New System.Drawing.Size(241, 26)
         Me.txtTelefono.TabIndex = 3
         '
         'txtPassword
         '
-        Me.txtPassword.Location = New System.Drawing.Point(306, 356)
+        Me.txtPassword.Location = New System.Drawing.Point(348, 353)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(241, 26)
         Me.txtPassword.TabIndex = 4
@@ -73,7 +73,7 @@ Partial Class Register
         'lblCorreo
         '
         Me.lblCorreo.AutoSize = True
-        Me.lblCorreo.Location = New System.Drawing.Point(211, 255)
+        Me.lblCorreo.Location = New System.Drawing.Point(253, 252)
         Me.lblCorreo.Name = "lblCorreo"
         Me.lblCorreo.Size = New System.Drawing.Size(61, 20)
         Me.lblCorreo.TabIndex = 5
@@ -82,7 +82,7 @@ Partial Class Register
         'lblTelefono
         '
         Me.lblTelefono.AutoSize = True
-        Me.lblTelefono.Location = New System.Drawing.Point(211, 306)
+        Me.lblTelefono.Location = New System.Drawing.Point(253, 303)
         Me.lblTelefono.Name = "lblTelefono"
         Me.lblTelefono.Size = New System.Drawing.Size(75, 20)
         Me.lblTelefono.TabIndex = 6
@@ -91,7 +91,7 @@ Partial Class Register
         'lblPassword
         '
         Me.lblPassword.AutoSize = True
-        Me.lblPassword.Location = New System.Drawing.Point(211, 359)
+        Me.lblPassword.Location = New System.Drawing.Point(253, 356)
         Me.lblPassword.Name = "lblPassword"
         Me.lblPassword.Size = New System.Drawing.Size(96, 20)
         Me.lblPassword.TabIndex = 7
@@ -102,7 +102,7 @@ Partial Class Register
         Me.lblTengoCuenta.AutoSize = True
         Me.lblTengoCuenta.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lblTengoCuenta.ForeColor = System.Drawing.Color.Blue
-        Me.lblTengoCuenta.Location = New System.Drawing.Point(309, 395)
+        Me.lblTengoCuenta.Location = New System.Drawing.Point(348, 404)
         Me.lblTengoCuenta.Name = "lblTengoCuenta"
         Me.lblTengoCuenta.Size = New System.Drawing.Size(238, 20)
         Me.lblTengoCuenta.TabIndex = 9
@@ -110,14 +110,14 @@ Partial Class Register
         '
         'btnRegistrar
         '
-        Me.btnRegistrar.Location = New System.Drawing.Point(369, 514)
+        Me.btnRegistrar.Location = New System.Drawing.Point(416, 448)
         Me.btnRegistrar.Name = "btnRegistrar"
         Me.btnRegistrar.Size = New System.Drawing.Size(121, 35)
         Me.btnRegistrar.TabIndex = 8
         Me.btnRegistrar.Text = "Registrar"
         Me.btnRegistrar.UseVisualStyleBackColor = True
         '
-        'Form1
+        'Register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -132,7 +132,7 @@ Partial Class Register
         Me.Controls.Add(Me.lblCorreo)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.txtCorreo)
-        Me.Name = "Form1"
+        Me.Name = "Register"
         Me.Text = "Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()
