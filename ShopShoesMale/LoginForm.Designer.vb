@@ -29,7 +29,7 @@ Partial Class LoginForm
         'lblCorreo
         '
         Me.lblCorreo.AutoSize = True
-        Me.lblCorreo.Location = New System.Drawing.Point(267, 242)
+        Me.lblCorreo.Location = New System.Drawing.Point(257, 243)
         Me.lblCorreo.Name = "lblCorreo"
         Me.lblCorreo.Size = New System.Drawing.Size(61, 20)
         Me.lblCorreo.TabIndex = 0
@@ -37,7 +37,7 @@ Partial Class LoginForm
         '
         'txtCorreo
         '
-        Me.txtCorreo.Location = New System.Drawing.Point(367, 242)
+        Me.txtCorreo.Location = New System.Drawing.Point(357, 243)
         Me.txtCorreo.Name = "txtCorreo"
         Me.txtCorreo.Size = New System.Drawing.Size(200, 26)
         Me.txtCorreo.TabIndex = 1
@@ -45,7 +45,7 @@ Partial Class LoginForm
         'lblPassword
         '
         Me.lblPassword.AutoSize = True
-        Me.lblPassword.Location = New System.Drawing.Point(267, 292)
+        Me.lblPassword.Location = New System.Drawing.Point(257, 293)
         Me.lblPassword.Name = "lblPassword"
         Me.lblPassword.Size = New System.Drawing.Size(96, 20)
         Me.lblPassword.TabIndex = 2
@@ -53,7 +53,7 @@ Partial Class LoginForm
         '
         'txtPassword
         '
-        Me.txtPassword.Location = New System.Drawing.Point(367, 292)
+        Me.txtPassword.Location = New System.Drawing.Point(357, 293)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(200, 26)
         Me.txtPassword.TabIndex = 3
@@ -61,7 +61,7 @@ Partial Class LoginForm
         '
         'btnIniciarSesion
         '
-        Me.btnIniciarSesion.Location = New System.Drawing.Point(402, 364)
+        Me.btnIniciarSesion.Location = New System.Drawing.Point(357, 386)
         Me.btnIniciarSesion.Name = "btnIniciarSesion"
         Me.btnIniciarSesion.Size = New System.Drawing.Size(120, 35)
         Me.btnIniciarSesion.TabIndex = 4
@@ -73,11 +73,11 @@ Partial Class LoginForm
         Me.lblNoTengoCuenta.AutoSize = True
         Me.lblNoTengoCuenta.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lblNoTengoCuenta.ForeColor = System.Drawing.Color.Blue
-        Me.lblNoTengoCuenta.Location = New System.Drawing.Point(309, 395)
+        Me.lblNoTengoCuenta.Location = New System.Drawing.Point(298, 351)
         Me.lblNoTengoCuenta.Name = "lblNoTengoCuenta"
-        Me.lblNoTengoCuenta.Size = New System.Drawing.Size(238, 20)
+        Me.lblNoTengoCuenta.Size = New System.Drawing.Size(259, 20)
         Me.lblNoTengoCuenta.TabIndex = 9
-        Me.lblNoTengoCuenta.Text = "¿No tienes cuenta? Registrate aquí"
+        Me.lblNoTengoCuenta.Text = "¿No tienes cuenta? Regístrate aquí"
         '
         'LoginForm
         '
@@ -87,6 +87,7 @@ Partial Class LoginForm
         Me.Controls.Add(Me.lblPassword)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.btnIniciarSesion)
+        Me.Controls.Add(Me.lblNoTengoCuenta)
         Me.Name = "LoginForm"
         Me.Text = "Inicio de Sesión"
         Me.ResumeLayout(False)

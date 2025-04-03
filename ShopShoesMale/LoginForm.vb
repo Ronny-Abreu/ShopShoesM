@@ -1,6 +1,4 @@
-﻿
-' Función para verificar los datos de login
-Imports System.Data.SqlClient
+﻿Imports System.Data.SqlClient
 
 Public Class LoginForm
     Private conexion As New SqlConnection("Server=SLIMREAPER;Database=ShopShoesM;Trusted_Connection=True;")
@@ -10,11 +8,13 @@ Public Class LoginForm
         Dim password As String = txtPassword.Text
 
         If VerificarUsuario(correo, password) Then
+            ' Marcar que el usuario ha iniciado sesión
+            HomeForm.UsuarioLogueado = True
 
-            ' Abrir HomeForm y ocultar este formulario
+            ' Volver al formulario Home
             Dim home As New HomeForm()
             home.Show()
-            Me.Hide()
+            Me.Close()
         Else
             MessageBox.Show("Correo o contraseña incorrectos.")
         End If
@@ -33,7 +33,6 @@ Public Class LoginForm
             If reader.HasRows Then
                 usuarioEncontrado = True
             End If
-
             reader.Close()
         Catch ex As Exception
             MessageBox.Show("Error: " & ex.Message)
@@ -44,10 +43,11 @@ Public Class LoginForm
         Return usuarioEncontrado
     End Function
 
-    'Función para redirigir al formulario de registrarse si el usuario quiere ir allá'
+    ' Redirigir al formulario de registro si el usuario quiere registrarse
     Private Sub lblNoTengoCuenta_Click(sender As Object, e As EventArgs) Handles lblNoTengoCuenta.Click
-        Dim Register As New Register()
-        Register.Show()
-        Me.Hide() ' Oculta el formulario de registro
+        Dim registro As New Register()
+        registro.Show()
+        Me.Hide()
     End Sub
+
 End Class
